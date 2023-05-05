@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Oh! Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="Food-Oh! Restaurant Logo"></a>
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#menu">Menu</a></li>
+            <li class="item"><a href="#about">About Us</a></li>
+            <li class="item"><a href="#booking">Booking</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div id="home-text-bg">
+            <h1 class="h-primary">Welcome to Food-Oh!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusantium </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div id="btn-container">
+            <a href="#services"><button class="btn">Order Online</button></a>
+            <a href="#booking"><button class="btn">Dine-in</buttton></a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <div>
+            <box class="servicebox">
+                <h2>Online Delivery</h2>
+                <img src="img/delivery.jpg" alt="Online Food Delivery">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cupiditate nostrum voluptate quasi
+                    accusamus eveniet doloribus ex </p>
+                <div>
+                    <a href="https://www.zomato.com/" target="_blank"><button id="zomato"
+                            class="delivery-btn">zomato</button></a>
+                    <a href="https://www.swiggy.com/" target="_blank"><button id="swiggy"
+                            class="delivery-btn">SWIGGY</button></a>
+                </div>
+            </box>
+            <box class="servicebox">
+                <h2>Dine-In</h2>
+                <img src="img/dine in.jpg" alt="Dine In">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cupiditate nostrum voluptate quasi
+                    accusamus eveniet doloribus ex </p>
+                <div><a href="#booking"><button class="book-btn">Reserve a table</button></a></div>
+            </box>
+            <box class="servicebox">
+                <h2>Catering</h2>
+                <img src="img/buffet.jpg" alt="Catering and Party orders">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cupiditate nostrum voluptate quasi
+                    accusamus eveniet doloribus ex </p>
+                <div><a href="#booking"><button class="book-btn">Enquire</button></a></div>
+            </box>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div></div>
+        <img src="img/menu.jpg" alt="Food-Oh! Menu">
+    </section>
+
+    <section id="about">
+        <div id="story-about">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis qui quam atque reiciendis impedit,
+                dignissimos maxime facilis eligendi repudiandae provident fuga commodi maiores animi saepe amet ab et.
+                Id!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis qui quam atque reiciendis impedit,
+                dignissimos maxime facilis eligendi repudiandae provident fuga commodi maiores animi saepe amet ab et.
+                Id!</p>
+        </div>
+        <div id="img-about">
+            <img src="img/about.jpg" alt="About me">
+        </div>
+    </section>
+
+    <section id="booking">
+        <h1>Bookings & Enquiries</h1>
+        <div class="contactbox">
+            <form action="">
+                <div class="form-group">
+                    <div class="entry">
+                        <label for="service-type">Service</label>
+                        <select name="service-type" id="service-type">
+                            <option value="dine-in">Reserve a Table</option>
+                            <option value="catering">Enquire about catering</option>
+                        </select>
+                    </div>
+                    <div class="entry">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="entry">
+                        <label for="guests"> No. of guests:</label>
+                        <input type="number" name="guests" id="guests" placeholder="Enter no. of guests">
+                    </div>
+                    <div class="entry">
+                        <label for="datetime">Date & Time</label>
+                        <input type="datetime-local" name="datetime" id="datetime">
+                    </div>
+                    <div class="entry">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone no.">
+                    </div>
+                    <div class="entry">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="entry">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="mesasge" cols="25" rows="5" placeholder="Enter message..."></textarea>
+                    </div>
+                    <div class="entry">
+                        <input class="btn" type="reset" value="Reset">
+                        <input class="btn" type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>Copyright &copy; Food-Oh! 2022. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
